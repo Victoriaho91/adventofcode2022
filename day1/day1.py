@@ -1,5 +1,6 @@
 from collections import defaultdict
 import pdb 
+
 def toInt(calorie):
     list = [x for x in calorie]
     cal = int(''.join(list[:len(list)-1]))
