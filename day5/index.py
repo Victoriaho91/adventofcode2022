@@ -16,6 +16,7 @@ for i in range(len(crates_input)):
         stackNum += 1
 directions = f[10:]
 
+print(supply_stack)
 def move(arr):
     num_of_crates, from_stack, to_stack=[int(x) for x in list(filter(lambda el: el.isdigit(),arr.split()))]
     return (num_of_crates, from_stack, to_stack)
@@ -32,5 +33,5 @@ keys.sort()
 
 result = ''.join([supply_stack[key][0] for key in keys])
 
-
+print(result)
     
